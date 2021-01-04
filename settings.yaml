@@ -1,0 +1,16 @@
+style_id: 2
+
+do_correction_filters: 1
+
+contrast: 0.2
+saturation: 0.05
+brightness: -0.05
+
+do_automatic_color: 1
+
+auto_color_intensity: 10
+color_variation: 10
+
+do_hue_filter: 0
+hue_shifter: 220
+hue_intensity: 12
