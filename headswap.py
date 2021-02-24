@@ -2,7 +2,6 @@ import yaml
 # from swaplib.matrixTransfer.dotheswap import doTheSwap
 import swaplib
 
-# an r goes here?
 with open('./settings.yaml') as file:
     settings = yaml.load(file, Loader=yaml.FullLoader)
 
