@@ -7,7 +7,7 @@ from PIL import Image
 import torchvision.transforms as transforms
 from .bisenet import BiSeNet
 
-pretrained_W = "/home/rama/legendfacesPipeline/models/bisenet_pretrained.pth"
+pretrained_W = "../../models/bisenet_pretrained.pth"
 
 def face2parsing_maps(img_source):
   """
