@@ -19,8 +19,8 @@ def download_models_():
   return haarcascade_path, LBFmodel_path
   
 def landmarks(s_paths):
-  haarcascade_path = "/home/rama/legendfacesPipeline/models/haarcascade_frontalface_alt2.xml"
-  LBFmodel_path = "/home/rama/legendfacesPipeline/models/lbfmodel.yaml"
+  haarcascade_path = "../../models/haarcascade_frontalface_alt2.xml"
+  LBFmodel_path = "../../models/lbfmodel.yaml"
 
   landmarks_arr = []
   detector = cv2.CascadeClassifier(haarcascade_path)
