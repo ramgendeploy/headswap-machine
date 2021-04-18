@@ -6,17 +6,23 @@ import numpy as np
 from PIL import Image
 import torchvision.transforms as transforms
 from .bisenet import BiSeNet
+from pathlib import Path
 
-pretrained_W = "../../models/bisenet_pretrained.pth"
+
+bisenetModelPath = f"{Path(__file__).parent}/models/bisenet_pretrained.pth"
 
 def face2parsing_maps(img_source):
+  # script_dir = Path(__file__).parent
   """
     img_source nd.array RGB Image
   """
+
+  print(bisenetModelPath)
+
   n_classes = 19
   net = BiSeNet(n_classes=n_classes)
   net.cpu()
-  net.load_state_dict(torch.load(pretrained_W, map_location = torch.device('cpu')))
+  net.load_state_dict(torch.load(bisenetModelPath, map_location = torch.device('cpu')))
   net.eval()
 
   to_tensor = transforms.Compose([

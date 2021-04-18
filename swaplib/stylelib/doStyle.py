@@ -9,7 +9,7 @@ from .fast_style_transfer import TransformerNet, load_image, process_image
 
 def doStyle(cropface, 
         ct_sat_brigh = [0,0,0],
-        model_path = f"/home/rama/legendfacesPipeline/models/styles/st_style_3.pth"):
+        model_path = f"./models/styles/st_style_3.pth"):
     """
         cropface : PIL image
 
