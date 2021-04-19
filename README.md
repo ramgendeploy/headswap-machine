@@ -5,10 +5,10 @@ pip install opencv-contrib-python
 pip3 install -r requirements.txt \
 ## Usage
 ```
-result = swaplib.doTheSwap(
-  './crop_source.jpg', 
-  './rf_template.png', 
-  './hl_template.png')
-  
-  cv2.imwrite("./test_result.jpg", result)
+result = headTransfer.Swap(
+source_path='./tests/source_1.jpg', 
+ref_path='./tests/target_img.jpg', 
+headless_path='./tests/headless_template.jpg',
+)
+cv2.imwrite("./tests/test_result.jpg", result)
 ```
