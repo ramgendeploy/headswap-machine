@@ -3,10 +3,10 @@ import cv2
 
 def main():
   result = headTransfer.Swap(
-  './tests/crop_source.jpg', 
-  './tests/rf.jpg', 
-  './tests/rf.jpg',
+  source_path='./tests/source_1.jpg', 
+  ref_path='./tests/target_img.jpg', 
+  headless_path='./tests/headless_template.jpg',
   )
-  cv2.imwrite("./test_result.jpg", result)
+  cv2.imwrite("./tests/test_result.jpg", result)
 if __name__ == "__main__":
   main()
